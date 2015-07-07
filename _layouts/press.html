@@ -6,10 +6,10 @@
 <body itemscope itemtype="http://schema.org/WebPage" id="bio-{{page.name}}">
 
 {% include flag.html %}
-<section class="container bare profile">
+<section class="container bare press">
 	{% include nav.html %}
   {% include logo.html %}
-  {% include headline.html %}
+  {% include headline.html title="Press" subtitle="Working on a story about 18F?" %}
   <div class="content" role="main" itemscope itemprop="mainContentOfPage">
     {{ content }}
     {% for item in site.press %}

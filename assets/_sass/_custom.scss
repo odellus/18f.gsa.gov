@@ -517,19 +517,17 @@ $tiniest: new-breakpoint(max-width 390px);
 }
 
 .blog-posting {
+	.headline h1 {
+		font-size:1.75em;
+	}
+	.headline h2 {
+		font-size: 1.15em !important;
+	}
 	h1 {
-		margin-top: 64px;
 	    font-weight: normal;
 	    margin-bottom: 20px;
 	    + p {
 			padding-top: 10px;
-		}
-		a {
-		    color: #333;
-		    text-decoration: none;
-		  	&:hover, &:focus {
-		    	color: #0068d0;
-		    }
 		}
 	}
 	a:hover, a:focus {
@@ -922,15 +920,17 @@ $tiniest: new-breakpoint(max-width 390px);
 	}
 }
 
-// Profiles
-.profile > .content {
+// New layout
+.profile > .content,
+.press > .content,
+.page > .content {
 	margin-top: 80px;
-	margin-left: 165px;
+	padding-left: 165px;
+	padding-right: 3em;
 	margin-right: 0 !important;
-	padding: 0 2.35765% 0;
 	display: block;
 	float: left;
-	@include span-columns(6);
+	@include span-columns(9 of 12);
 	@include media($medium) {
 		@include span-columns(10);
 		float: none;
@@ -951,11 +951,13 @@ $tiniest: new-breakpoint(max-width 390px);
 		font-weight: 400;
 	}
 }
-.profile > aside {
+.profile > aside,
+.press > aside,
+.page > aside {
 	margin-top: 80px;
 	display: block;
 	float: right;
-	@include span-columns(4);
+	@include span-columns(3);
 	h2 {
 		font-size: $base-font-size * 1.25;
 		font-weight: 300;
@@ -987,6 +989,7 @@ $tiniest: new-breakpoint(max-width 390px);
 	}
 }
 // Headline
+// lines marked !important are usually overriding styles in .bare that we plan to deprecate
 .headline {
 	background-color: #18f;
 	color: white;
@@ -1001,6 +1004,52 @@ $tiniest: new-breakpoint(max-width 390px);
 		height: auto;
 		margin-top: 15px;
 		padding-left: 0;
+	}
+	h1,
+	h1 a,
+	h2 a,{
+		color: white;
+		// font-size: 32px;
+		@include media($big) {
+			font-size: 24px !important;
+		}
+	}
+	h1 {
+		font-size: $base-font-size * 1.75;
+	}
+	h2 {
+		font-size: $base-font-size * 1.55 !important;
+		font-weight: 300 !important;
+		padding-top: 0 !important;
+		color: white;
+	}
+}
+
+.profile .headline {
+	h1,
+	h2,
+	h1 a,
+	h2 a,{
+		float: left;
+		display: block;
+		position: relative;
+		clear: both;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		min-width: 500px;
+		max-width: 570px;
+		color: white;
+		@include media($medium) {
+			float: left;
+			display: block;
+			position: relative;
+			margin-right: 0;
+			margin-left: 0;
+			width: 100%;
+			max-width: 100% !important;
+			min-width: 100% !important;
+			text-align: center;
+		}
 	}
 	img {
 		margin: 0 auto;
@@ -1018,40 +1067,7 @@ $tiniest: new-breakpoint(max-width 390px);
 			padding: 1em 0;
 		}
 	}
-	h1,
-	h2 {
-		float: left;
-		display: block;
-		position: relative;
-		clear: both;
-		padding-top: 0 !important;
-		padding-bottom: 0 !important;
-		min-width: 500px;
-		max-width: 570px;
-		@include media($medium) {
-			float: left;
-			display: block;
-			position: relative;
-			margin-right: 0;
-			margin-left: 0;
-			width: 100%;
-			max-width: 100% !important;
-			min-width: 100% !important;
-			text-align: center;
-		}
-	}
-	h1 {
-		// font-size: 32px;
-		@include media($big) {
-			font-size: 24px !important;
-		}
-	}
-	h2 {
-		font-size: $base-font-size * 1.55 !important;
-		font-weight: 300 !important;
-	}
 }
-
 
 // Contact
 //********************************************************
@@ -1386,9 +1402,5 @@ $tiniest: new-breakpoint(max-width 390px);
 // Press Page
 //********************************************************
 
-.question {
-			color: $base-link-color;
-			font-size: 2.25em;
-		}
 
 /* vim:noet ts=4 sw=4 */
