@@ -16,11 +16,8 @@ tags:
 - developer
 - culture
 
----
-<p class="authors">
-  by {% author catherine %}
-</p>
 
+---
 18F is dedicated to spreading modern software techniques like
 rigorous automated testing throughout the Federal government;
 we want to showcase how solid testing enables rapid, high-quality

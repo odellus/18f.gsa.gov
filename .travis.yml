@@ -2,6 +2,7 @@ language: ruby
 rvm:
 - 2.2.0
 sudo: false
+cache: bundler
 git:
   submodules: false
 script: "./go ci_build"

@@ -4,7 +4,7 @@ date: '2015-02-11'
 layout: post
 image: /assets/blog/agile-workshop/workshop3.jpg
 tags:
-- longreads
+- longread
 - agile
 - workshops
 - how we work
@@ -133,7 +133,7 @@ workstation and tell them “fatter” or “thinner” until you like it." And
 that's how we came to explore Agile tenet \#4: **Value responding to
 change** over following a plan.
 
-People were becoming familiar with the process now. I could almost see light bulbs flashing over people's heads — the excitement was that palpable. The developers and customers were talking on their own in too many conversations for us to follow. (Agile tenet \#3: **Value customer interaction** of contract negotiation.)
+People were becoming familiar with the process now. I could almost see light bulbs flashing over people's heads — the excitement was that palpable. The developers and customers were talking on their own in too many conversations for us to follow. (Agile tenet \#3: **Value customer interaction** over contract negotiation.)
 
 <img src="/assets/blog/agile-workshop/workshop2.jpg" alt="The SSA developers at work." class="align-left" />
 
@@ -204,7 +204,7 @@ Running Your Own Agile Workshop
 We’ve previously published a guide to running your own [3-Sprint Agile
 Workshop](https://18f.gsa.gov/2014/10/21/how-to-run-your-own-3-sprint-agile-workshop/).
 
-[18F Consulting](https://18f.github.io/consulting/) provides Agile
+[18F Consulting](https://18f.gsa.gov/consulting/) provides Agile
 coaching, modular contracting expertise and technical advice to Federal
 agencies at cost-recovery prices.
 
