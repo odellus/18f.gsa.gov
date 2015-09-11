@@ -254,3 +254,20 @@ russ:
   full_name: Russ Unger
   first_name: Russ
   last_name: Unger
+deniseroth:
+  full_name: Denise Turner Roth
+  first_name: Denise
+  last_name: Roth
+  url: http://www.gsa.gov/portal/content/100046
+zaccohn:
+  full_name: Zac Cohn
+  first_name: Zachary
+  last_name: Cohn
+kedelman:
+  full_name: Kathryn Edelman
+  first_name: Kathryn
+  last_name: Edelman
+jtag:
+  full_name: Jesse Taggert
+  first_name: Jesse
+  last_name: Taggert
