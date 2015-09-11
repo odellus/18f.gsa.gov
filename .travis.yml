@@ -20,15 +20,13 @@ branches:
   - production
   - redeploy
 deploy:
-  provider: s3
-  access_key_id: AKIAI4LCAXVBDV5DIESQ
-  secret_access_key:
-    secure: O/4NyKjbM9zFJSFdXbk9lZiaHtUEhtfTRZO3Ryeb+iQi+UCDDzD6N0gK9SwdzxGmAUkWmYKfH8ho4jTNpX/lwds6nh/2qSzAq2FKI8y7sj2vBABXFdvuehn1MBrxeZ4ZttLzSSdqFw9NWfQzFm8fdWfxI+wo2ony4BEPcUaCYjM=
-  bucket: 18f-site-ci-build
-  local-dir: _site
-  upload-dir: $TRAVIS_COMMIT
-  acl: public_read
+  provider: cloudfoundry
+  api: https://api.18f.gov
+  username: 18F-deployer
+  password:
+    secure: EyrUjA/+xsN1UsgppsHqoJe6W4c49305XMuuWu0bE2N5Ixh56EbH9I0XaHBam98jlNa83WeiBw4yFuREC8MUE6aQzLYG0gDfRnwA4Uc4gbIciwea3IRB0stFPNwetX2OU65TK74L4ZiGvTwcrlzjLXV3j4ieEyGezN7sEnk23ks=
+  organization: 18F
+  space: site
   on:
     repo: 18F/18f.gsa.gov
-    branch: redeploy
-  skip_cleanup: true
+    branch: staging
