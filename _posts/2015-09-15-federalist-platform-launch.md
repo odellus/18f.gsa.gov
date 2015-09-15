@@ -31,8 +31,7 @@ providing a simple way for developers to launch new websites or more
 easily manage existing ones. (The platform also supports Microsoft's
 Azure through open source contributions.)
 
-18F is launching Federalist as a fee-for-service platform that is
-intended for two audiences: federal developers who need a platform for
+18F developed Federalist for two audiences: federal developers who need a platform for
 reliable, quick hosting of static sites, and federal groups that may not
 have a developer on staff but need secure, accessible, and responsive
 websites to get their content out to the public.
