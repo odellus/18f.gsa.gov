@@ -114,20 +114,6 @@ on top of an open source platform which already has proven scalability,"
 says Jeremia Kimelman, a developer on the program. "That's one of the
 great things about this platform."
 
-## Cost-savings
-
-On top of everything else, our platform will save agencies money because
-the cost of building a website on Federalist is significantly cheaper
-than building a website from scratch each time an agency needs a new
-one.
-
-A small static website built from scratch might take 200-250 hours of
-design and development work, plus the cost of infrastructure and
-maintenance. In comparison, 18F will charge Federalist users only for
-the traffic their sites use, as well as an annual fee to access the
-platform that amounts to a small fraction of the cost of a custom
-project.
-
 ## How to learn more
 
 If your agency or department is interested in using Federalist, we’d
