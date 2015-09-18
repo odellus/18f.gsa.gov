@@ -64,6 +64,8 @@ team:
   role: research
 - id: melody
   role: editor
+- id: jhunter
+  role: editor
 # Partners for whom the project is developed
 #partners:
 #-
