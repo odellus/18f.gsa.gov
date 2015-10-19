@@ -38,12 +38,12 @@ teammate Nick Bristow will be live tweeting the event.
 ## What is EITI?
 
 The federal government earns revenue from resources like coal, natural
-gas, and oil extracted out of public lands. For example, in 2013 more
+gas, and oil extracted out of public lands. For example, in 2013, more
 than $9.8 billion dollars were earned from active natural resource
-leases on Federal land. In the ten previous years, $127.4 billion was
+leases on federal land. In the ten previous years, $127.4 billion was
 earned in resource revenues from the extractive industries. The
 [international initiative is a group of 48
-countries,](https://eiti.org) including the US, dedicated to opening up
+countries,](https://eiti.org) including the United States, dedicated to opening up
 information about revenues from these industries by establishing a
 global standard to promote openness and accountability in extractives
 management. It seeks to strengthen government and company systems,
