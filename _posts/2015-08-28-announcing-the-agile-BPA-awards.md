@@ -18,6 +18,9 @@ learned so far."
 description: "As the first Agile BPA awards are now being issued, we
 asked three members of the team about the process and the lessons
 they’ve learned so far."
+permalink: /2015/08/28/announcing-the-agile-bpa-awards/
+redirect_from:
+- /2015/08/28/announcing-the-agile-BPA-awards/
 ---
 
 In January, 18F Consulting
