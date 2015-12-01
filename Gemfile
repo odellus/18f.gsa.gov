@@ -1,9 +1,16 @@
 source "https://rubygems.org"
-
 ruby  '2.2.3'
 gem 'redcarpet', '3.2.3'
 gem 'jekyll', '3.0.1'
-gem 'html-proofer'
+gem 'jemoji'
+
+group :tests do
+  gem 'html-proofer'
+  gem 'capybara'
+  gem 'rspec'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+end
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
@@ -15,7 +22,6 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
 end
 
-gem 'jemoji'
 group :development do
   gem 'pry'
 end
