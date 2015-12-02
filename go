@@ -39,7 +39,7 @@ def init
     exec_cmd 'gem install bundler'
     puts "Bundler installed; installing gems"
   end
-  exec_cmd 'bundle install'
+  exec_cmd 'bundle install --without tests'
 end
 
 def update_gems(development=true)
@@ -113,9 +113,26 @@ def cf_deploy
   exec_cmd('sh deploy/cf-deploy.sh')
 end
 
+def init_selenium
+  begin
+    exec_cmd('which chromedriver')
+  rescue
+    puts "Installing chromedriver"
+    exec_cmd 'brew install chromedriver'
+    puts "Chromedriver installed"
+    exec_cmd('bundle install')
+  end
+end
+
 def test
   exec_cmd('bundle exec deploy/tests/test.rb')
   exec_cmd('bundle exec jekyll test')
+end
+
+def browser_test
+  init_selenium
+  exec_cmd('ruby script/url-list.rb')
+  exec_cmd('rspec')
 end
 
 def pre_deploy
@@ -137,6 +154,7 @@ COMMANDS = {
   :cf_deploy => 'Deploys to cloudfoundry',
   :production_build => 'Deploys to production using a second config file',
   :test => 'Tests the fontmatter and site build.',
+  :browser_test => 'Runs selenium tests',
   :pre_deploy => 'Builds the site and runs associated tests',
   :reset => 'Clears the build cache'
 }
