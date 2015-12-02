@@ -7,6 +7,7 @@ urls ||= []
 posts.each_with_index do |post, index|
   frontmatter = YAML.load_file(post)
   if frontmatter['published'] == false
+    # only test permalinks to posts we've actually published
     next
   end
   unless frontmatter['permalink']

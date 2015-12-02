@@ -1,4 +1,6 @@
-/_site
+deploy/tests/errors.csv
+deploy/tests/errors.yaml
+_site
 .DS_Store
 /todo.txt
 *.log
@@ -18,5 +20,4 @@ _team/michelle.md
 _team/papazian.md
 _team/robert.md
 _team/sean.md
-_data/errors.csv
 deploy/tests/urls.yaml
