@@ -20,10 +20,10 @@ exclude:
 - Gemfile.lock
 
 gems:
-  - jekyll-sitemap
   - jekyll-archives
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-sitemap
 
 jekyll-archives:
   enabled:

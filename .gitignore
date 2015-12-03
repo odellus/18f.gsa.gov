@@ -18,3 +18,5 @@ _team/michelle.md
 _team/papazian.md
 _team/robert.md
 _team/sean.md
+deploy/tests/*.yaml
+deploy/tests/errors.csv
