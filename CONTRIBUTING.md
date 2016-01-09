@@ -2,7 +2,7 @@
 
 ## Where Contributions Go
 
-Submit contributions to https://github.com/18F/18f.gsa.gov as a pull request to the `staging` branch.
+We welcome you to submit your fucking contributions (especially documentation :heart_eyes:) to https://github.com/18F/18f.gsa.gov as a pull request to the `staging` branch.
 
 ## Team photos
 
